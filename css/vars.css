@@ -1,0 +1,15 @@
+:root {
+    /* FONTS */
+    --title-font: 'Poppins', sans-serif;
+    --main-font: 'Poppins', sans-serif;
+
+    /* IMAGES */
+    --background-image: url("../assets/imgs/etc/JojoBackground.jpg");
+
+    /* COLORS */
+    --primary-color: #E15FB6;
+    --secondary-color: #643CD2;
+    --tertiary-color: #C6C3C3;
+    --auxiliary-color: #4E4E6D;
+    --hover-button-color: #643CD2;
+}
