@@ -8,30 +8,59 @@ body {
     color: white;
     width: 100vw;
     height: 100vh;
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    var(--background-image);
+    background-size: cover;
+    background-position: 50%;
 }
 
 #main-display {
     display: flex;
     justify-content: center;
     height: 95vh;
-    /*
-    background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-        var(--background-image);
-    background-size: cover;
-    */    
 }
 
 .standard-button {
     background-color: var(--primary-color);
-    border-radius: 10px;
     font-size: 1.75rem;
     font-weight: 700;
     color: var(--tertiary-color);
     font-family: var(--main-font);
     padding: 10px 20px;
-    border: 0px;
     cursor: pointer;
+}
+
+.pixel-border {
+    clip-path: polygon(
+    0px calc(100% - 24px),
+    6px calc(100% - 24px),
+    6px calc(100% - 12px),
+    12px calc(100% - 12px),
+    12px calc(100% - 6px),
+    24px calc(100% - 6px),
+    24px 100%,
+    calc(100% - 24px) 100%,
+    calc(100% - 24px) calc(100% - 6px),
+    calc(100% - 12px) calc(100% - 6px),
+    calc(100% - 12px) calc(100% - 12px),
+    calc(100% - 6px) calc(100% - 12px),
+    calc(100% - 6px) calc(100% - 24px),
+    100% calc(100% - 24px),
+    100% 24px,
+    calc(100% - 6px) 24px,
+    calc(100% - 6px) 12px,
+    calc(100% - 12px) 12px,
+    calc(100% - 12px) 6px,
+    calc(100% - 24px) 6px,
+    calc(100% - 24px) 0px,
+    24px 0px,
+    24px 6px,
+    12px 6px,
+    12px 12px,
+    6px 12px,
+    6px 24px,
+    0px 24px);
 }
 
 .standard-button:hover {

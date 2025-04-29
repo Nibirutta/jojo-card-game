@@ -2,4 +2,12 @@
     display: flex;
     height: 5vh;
     justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-size: 1.5rem;
+}
+
+#author {
+    font-family: var(--main-font);
+    
 }

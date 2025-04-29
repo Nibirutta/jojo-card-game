@@ -13,21 +13,32 @@
 </head>
     <body>
         <main id="main-display" class="">
-            <div id="menu" class="menu-conteiner hidden">
+            <div id="menu" class="menu-conteiner">
                 <div id="title">
                     <h1>Jojo</h1>
                     <h3>Card Matching</h3>
                 </div>
-                <div id="menu-options" class="options">
+                <div id="main-menu" class="options">
                     <div>
-                        <button id="start-button" class="standard-button">Start</button>
+                        <button id="start-button" class="standard-button pixel-border">Start</button>
                     </div>
                     <div>
-                        <button id="options-button" class="standard-button">Options</button>
+                        <button id="options-button" class="standard-button pixel-border">Options</button>
+                    </div>
+                </div>
+                <div id="options-menu" class="options hidden">
+                    <div id="mode-options">
+                        <h3>Choose your mode</h3>
+                        <button id="easy-button" class="standard-button pixel-border">Easy Mode</button>
+                        <button id="normal-button" class="standard-button pixel-border">Normal Mode</button>
+                        <button id="hard-button" class="standard-button pixel-border">Hard Mode</button>
+                    </div>
+                    <div>
+                        <button id="return-button" class="standard-button pixel-border">Return</button>
                     </div>
                 </div>
             </div>
-            <div id="board" class="board-conteiner">
+            <div id="board" class="board-conteiner hidden">
                 <div id="board-title">
                     <div id="board-text">
                         <p>Choose your destiny wisely</p>
@@ -37,7 +48,7 @@
                         <span>00:00</span>
                     </div>
                 </div>
-                <div id="card-board">
+                <div id="card-board" class="pixel-border">
                     <div id="card1" class="card">
                         <img src="./assets/imgs/cards/01-TheFool.png" alt="">
                     </div>
@@ -77,18 +88,20 @@
                 </div>
                 <div id="board-options">
                     <div>
-                        <button id="retry-button" class="standard-button">Retry</button>
+                        <button id="retry-button" class="standard-button pixel-border">Retry</button>
                     </div>
                     <div>
-                        <button id="return-to-menu-button" class="standard-button">Main Menu</button>
+                        <button id="menu-button" class="standard-button pixel-border">Main Menu</button>
                     </div>
                 </div>
             </div>
         </main>
         <footer id="main-footer" class="">
             <div>
-                <p>&copy Made by Lucas</p>
+                <span id="copyright-symbol">&copy</span>
+                <span id="author">Made by Lucas</span>
             </div>
         </footer>
     </body>
+    <script src="./js/buttons.js"></script>
 </html>

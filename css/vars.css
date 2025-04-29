@@ -1,15 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
 :root {
     /* FONTS */
-    --title-font: 'Poppins', sans-serif;
-    --main-font: 'Poppins', sans-serif;
+    --main-font: 'Pixelify Sans', sans-serif;
 
     /* IMAGES */
-    --background-image: url("../assets/imgs/etc/JojoBackground.jpg");
+    --background-image: url("/assets/imgs/etc/pxArt.png");
 
     /* COLORS */
-    --primary-color: #E15FB6;
+    --primary-color: #A3A5D9;
     --secondary-color: #643CD2;
-    --tertiary-color: #C6C3C3;
-    --auxiliary-color: #4E4E6D;
+    --auxiliary-color: #302E59;
     --hover-button-color: #643CD2;
 }
