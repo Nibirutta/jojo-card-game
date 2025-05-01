@@ -5,11 +5,16 @@
     --main-font: 'Pixelify Sans', sans-serif;
 
     /* IMAGES */
-    --background-image: url("/assets/imgs/etc/pxArt.png");
+    --background-image: url("/assets/imgs/etc/pxArt1.png");
 
     /* COLORS */
     --primary-color: #A3A5D9;
     --secondary-color: #643CD2;
     --auxiliary-color: #302E59;
     --hover-button-color: #643CD2;
+    --font-hidden-color: rgba(0, 0, 0, 0);
+    --font-visible-color: rgba(0, 0, 0, 1);
+
+    /* DISPLAY */
+    --leaderboard-width: 30vw;
 }

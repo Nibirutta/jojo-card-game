@@ -1,3 +1,5 @@
+/* BOARD HEADER */
+
 #board-title {
     display: flex;
     flex-direction: column;
@@ -14,6 +16,8 @@
 #board-title #board-timer {
     font-size: 1.5rem;;
 }
+
+/* BOARD */
 
 .board-conteiner {
     display: flex;
@@ -44,10 +48,11 @@
     height: 100%;
 }
 
+/* BOARD OPTIONS */
+
 #board-options {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
     padding: 10px 20px;
 }
-

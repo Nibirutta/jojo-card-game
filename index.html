@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
     <link rel="stylesheet" href="css/vars.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/board.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Jojo Card Matching Game</title>
 </head>
     <body>
@@ -23,18 +25,38 @@
                         <button id="start-button" class="standard-button pixel-border">Start</button>
                     </div>
                     <div>
-                        <button id="options-button" class="standard-button pixel-border">Options</button>
+                        <button id="options-button" onclick="toggleMenu()" class="standard-button pixel-border">Options</button>
                     </div>
+                    <div>
+                        <button id="leaderboard-button" class="standard-button pixel-border">Show leaderboard</button>
+                    </div>
+                </div>
+                <div id="leaderboard">
+                    <button id="close-leaderboard-button" class="fa-solid fa-xmark"></button>
+                    <div id="leaderboard-title">
+                        <h3>Match leaderboard</h3>
+                    </div>
+                    <div id="leaderboard-best-time">
+                        <span>Best Player: None</span>
+                    </div>
+                    <ul id="leaderboard-log">
+                        <li class="leaderboard-item">
+                            <span>Gustavo completed in 04:06</span>
+                        </li>
+                        <li class="leaderboard-item">
+                            <span>Lucas completed in 04:06</span>
+                        </li>
+                    </ul>
                 </div>
                 <div id="options-menu" class="options hidden">
                     <div id="mode-options">
                         <h3>Choose your mode</h3>
-                        <button id="easy-button" class="standard-button pixel-border">Easy Mode</button>
-                        <button id="normal-button" class="standard-button pixel-border">Normal Mode</button>
-                        <button id="hard-button" class="standard-button pixel-border">Hard Mode</button>
+                        <button id="easy-button" class="mode-button standard-button pixel-border">Easy Mode</button>
+                        <button id="normal-button" class="mode-button standard-button pixel-border">Normal Mode</button>
+                        <button id="hard-button" class="mode-button standard-button pixel-border">Hard Mode</button>
                     </div>
                     <div>
-                        <button id="return-button" class="standard-button pixel-border">Return</button>
+                        <button id="return-button" onclick="toggleMenu()" class="standard-button pixel-border">Return</button>
                     </div>
                 </div>
             </div>
